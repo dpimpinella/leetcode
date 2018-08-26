@@ -20,8 +20,7 @@ class Solution(object):
             if tempWord not in morseWords:
                 morseWords.append(tempWord)
                 count += 1           
-
-        print(count)
+                
         return count
 
 
