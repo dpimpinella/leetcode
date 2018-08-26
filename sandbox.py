@@ -1,20 +1,5 @@
-class Solution(object):    
-    def isPalindrome(self,s):
+x = [1,1,0]
+print (x)
+x.reverse()
 
-        def toChars(s):
-            s = s.lower()
-            ans = ''
-            for c in s:
-                if c in 'abcdefghijklmnopqrstuvwxyz':
-                    ans = ans + c
-            return ans
-
-        def isPal(s):
-            if len(s) <= 1:
-                return True
-            else:
-                return s[0] == s[-1] and isPal(s[1:-1])
-
-        return isPal(toChars(s))
-
-run = print(Solution().isPalindrome('racecar'))
+print(x)
