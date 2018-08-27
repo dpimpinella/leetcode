@@ -4,21 +4,21 @@ class Solution:
         :type moves: str
         :rtype: bool
         """
-        origin = [0,0]
+        xcount = 0
+        ycount = 0
         for char in moves:
             if char == 'U':
-                origin[1] += 1
+                ycount += 1
             elif char == 'D':
-                origin[1] -= 1
+                ycount -= 1
             elif char == 'R':
-                origin[0] += 1
+                xcount += 1
             else:
-                origin[0] -= 1
-        if origin == [0,0]:
+                xcount -= 1
+        if ycount == 0 and xcount == 0:
             return True
         else:
             return False
-
-run = Solution().judgeCircle('UD')
+run = Solution().judgeCircle('LL')
 
 
