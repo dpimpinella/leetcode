@@ -19,6 +19,6 @@ class Solution:
             return True
         else:
             return False
-run = Solution().judgeCircle('LL')
-
+run = Solution().judgeCircle('LR')
+print(run)
 
